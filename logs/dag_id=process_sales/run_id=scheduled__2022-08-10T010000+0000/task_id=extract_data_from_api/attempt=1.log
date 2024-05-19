@@ -1,0 +1,66 @@
+[2024-05-17T19:10:24.418+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-17T19:10:24.435+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_sales.extract_data_from_api scheduled__2022-08-10T01:00:00+00:00 [queued]>
+[2024-05-17T19:10:24.441+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_sales.extract_data_from_api scheduled__2022-08-10T01:00:00+00:00 [queued]>
+[2024-05-17T19:10:24.442+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2024-05-17T19:10:24.453+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): extract_data_from_api> on 2022-08-10 01:00:00+00:00
+[2024-05-17T19:10:24.458+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1432) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-17T19:10:24.460+0000] {standard_task_runner.py:63} INFO - Started process 1434 to run task
+[2024-05-17T19:10:24.460+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'process_sales', 'extract_data_from_api', 'scheduled__2022-08-10T01:00:00+00:00', '--job-id', '220', '--raw', '--subdir', 'DAGS_FOLDER/process_sales.py', '--cfg-path', '/tmp/tmp98ff7scl']
+[2024-05-17T19:10:24.462+0000] {standard_task_runner.py:91} INFO - Job 220: Subtask extract_data_from_api
+[2024-05-17T19:10:24.495+0000] {task_command.py:426} INFO - Running <TaskInstance: process_sales.extract_data_from_api scheduled__2022-08-10T01:00:00+00:00 [running]> on host 6239d20906ca
+[2024-05-17T19:10:24.558+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='ostapenko.vctr@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_sales' AIRFLOW_CTX_TASK_ID='extract_data_from_api' AIRFLOW_CTX_EXECUTION_DATE='2022-08-10T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-08-10T01:00:00+00:00'
+[2024-05-17T19:10:24.560+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-17T19:10:24.560+0000] {logging_mixin.py:188} INFO - 2022-08-10
+[2024-05-17T19:10:27.232+0000] {logging_mixin.py:188} INFO - Job_2 done! Response code: 200.
+[2024-05-17T19:10:27.233+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-17T19:10:27.234+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-17T19:10:27.245+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=process_sales, task_id=extract_data_from_api, run_id=scheduled__2022-08-10T01:00:00+00:00, execution_date=20220810T010000, start_date=20240517T191024, end_date=20240517T191027
+[2024-05-17T19:10:27.289+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-17T19:10:27.304+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-17T19:10:27.307+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-17T19:14:21.873+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-17T19:14:21.890+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_sales.extract_data_from_api scheduled__2022-08-10T01:00:00+00:00 [queued]>
+[2024-05-17T19:14:21.896+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_sales.extract_data_from_api scheduled__2022-08-10T01:00:00+00:00 [queued]>
+[2024-05-17T19:14:21.897+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2024-05-17T19:14:21.910+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): extract_data_from_api> on 2022-08-10 01:00:00+00:00
+[2024-05-17T19:14:21.915+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=84) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-17T19:14:21.917+0000] {standard_task_runner.py:63} INFO - Started process 86 to run task
+[2024-05-17T19:14:21.917+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'process_sales', 'extract_data_from_api', 'scheduled__2022-08-10T01:00:00+00:00', '--job-id', '243', '--raw', '--subdir', 'DAGS_FOLDER/process_sales.py', '--cfg-path', '/tmp/tmp3wyufyyj']
+[2024-05-17T19:14:21.919+0000] {standard_task_runner.py:91} INFO - Job 243: Subtask extract_data_from_api
+[2024-05-17T19:14:21.965+0000] {task_command.py:426} INFO - Running <TaskInstance: process_sales.extract_data_from_api scheduled__2022-08-10T01:00:00+00:00 [running]> on host 6239d20906ca
+[2024-05-17T19:14:22.041+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='ostapenko.vctr@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_sales' AIRFLOW_CTX_TASK_ID='extract_data_from_api' AIRFLOW_CTX_EXECUTION_DATE='2022-08-10T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-08-10T01:00:00+00:00'
+[2024-05-17T19:14:22.043+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-17T19:14:22.045+0000] {logging_mixin.py:188} INFO - 2022-08-10
+[2024-05-17T19:14:24.144+0000] {logging_mixin.py:188} INFO - Job_2 done! Response code: 200.
+[2024-05-17T19:14:24.144+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-17T19:14:24.145+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-17T19:14:24.154+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=process_sales, task_id=extract_data_from_api, run_id=scheduled__2022-08-10T01:00:00+00:00, execution_date=20220810T010000, start_date=20240517T191421, end_date=20240517T191424
+[2024-05-17T19:14:24.183+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-17T19:14:24.198+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-17T19:14:24.202+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-17T19:15:57.801+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-17T19:15:57.819+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_sales.extract_data_from_api scheduled__2022-08-10T01:00:00+00:00 [queued]>
+[2024-05-17T19:15:57.826+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_sales.extract_data_from_api scheduled__2022-08-10T01:00:00+00:00 [queued]>
+[2024-05-17T19:15:57.827+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2024-05-17T19:15:57.837+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): extract_data_from_api> on 2022-08-10 01:00:00+00:00
+[2024-05-17T19:15:57.843+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=117) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-17T19:15:57.844+0000] {standard_task_runner.py:63} INFO - Started process 119 to run task
+[2024-05-17T19:15:57.844+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'process_sales', 'extract_data_from_api', 'scheduled__2022-08-10T01:00:00+00:00', '--job-id', '247', '--raw', '--subdir', 'DAGS_FOLDER/process_sales.py', '--cfg-path', '/tmp/tmpgrg78827']
+[2024-05-17T19:15:57.847+0000] {standard_task_runner.py:91} INFO - Job 247: Subtask extract_data_from_api
+[2024-05-17T19:15:57.884+0000] {task_command.py:426} INFO - Running <TaskInstance: process_sales.extract_data_from_api scheduled__2022-08-10T01:00:00+00:00 [running]> on host 6239d20906ca
+[2024-05-17T19:15:57.946+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='ostapenko.vctr@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_sales' AIRFLOW_CTX_TASK_ID='extract_data_from_api' AIRFLOW_CTX_EXECUTION_DATE='2022-08-10T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-08-10T01:00:00+00:00'
+[2024-05-17T19:15:57.948+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-17T19:15:57.948+0000] {logging_mixin.py:188} INFO - 2022-08-10
+[2024-05-17T19:15:59.771+0000] {logging_mixin.py:188} INFO - Job_2 done! Response code: 200.
+[2024-05-17T19:15:59.772+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-17T19:15:59.773+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-17T19:15:59.783+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=process_sales, task_id=extract_data_from_api, run_id=scheduled__2022-08-10T01:00:00+00:00, execution_date=20220810T010000, start_date=20240517T191557, end_date=20240517T191559
+[2024-05-17T19:15:59.830+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-17T19:15:59.844+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-17T19:15:59.847+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

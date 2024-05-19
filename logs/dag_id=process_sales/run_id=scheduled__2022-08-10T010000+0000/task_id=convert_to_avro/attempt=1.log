@@ -1,0 +1,63 @@
+[2024-05-17T19:10:28.479+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-17T19:10:28.494+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_sales.convert_to_avro scheduled__2022-08-10T01:00:00+00:00 [queued]>
+[2024-05-17T19:10:28.501+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_sales.convert_to_avro scheduled__2022-08-10T01:00:00+00:00 [queued]>
+[2024-05-17T19:10:28.502+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2024-05-17T19:10:28.512+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): convert_to_avro> on 2022-08-10 01:00:00+00:00
+[2024-05-17T19:10:28.517+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1435) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-17T19:10:28.519+0000] {standard_task_runner.py:63} INFO - Started process 1437 to run task
+[2024-05-17T19:10:28.518+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'process_sales', 'convert_to_avro', 'scheduled__2022-08-10T01:00:00+00:00', '--job-id', '221', '--raw', '--subdir', 'DAGS_FOLDER/process_sales.py', '--cfg-path', '/tmp/tmptw4f8usr']
+[2024-05-17T19:10:28.520+0000] {standard_task_runner.py:91} INFO - Job 221: Subtask convert_to_avro
+[2024-05-17T19:10:28.556+0000] {task_command.py:426} INFO - Running <TaskInstance: process_sales.convert_to_avro scheduled__2022-08-10T01:00:00+00:00 [running]> on host 6239d20906ca
+[2024-05-17T19:10:28.620+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='ostapenko.vctr@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_sales' AIRFLOW_CTX_TASK_ID='convert_to_avro' AIRFLOW_CTX_EXECUTION_DATE='2022-08-10T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-08-10T01:00:00+00:00'
+[2024-05-17T19:10:28.622+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-17T19:10:28.831+0000] {logging_mixin.py:188} INFO - Job_2 done! Response code: 200.
+[2024-05-17T19:10:28.831+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-17T19:10:28.832+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-17T19:10:28.841+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=process_sales, task_id=convert_to_avro, run_id=scheduled__2022-08-10T01:00:00+00:00, execution_date=20220810T010000, start_date=20240517T191028, end_date=20240517T191028
+[2024-05-17T19:10:28.894+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-17T19:10:28.906+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-17T19:10:28.909+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-17T19:14:25.779+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-17T19:14:25.793+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_sales.convert_to_avro scheduled__2022-08-10T01:00:00+00:00 [queued]>
+[2024-05-17T19:14:25.799+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_sales.convert_to_avro scheduled__2022-08-10T01:00:00+00:00 [queued]>
+[2024-05-17T19:14:25.799+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2024-05-17T19:14:25.809+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): convert_to_avro> on 2022-08-10 01:00:00+00:00
+[2024-05-17T19:14:25.814+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=87) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-17T19:14:25.816+0000] {standard_task_runner.py:63} INFO - Started process 89 to run task
+[2024-05-17T19:14:25.816+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'process_sales', 'convert_to_avro', 'scheduled__2022-08-10T01:00:00+00:00', '--job-id', '244', '--raw', '--subdir', 'DAGS_FOLDER/process_sales.py', '--cfg-path', '/tmp/tmplximscat']
+[2024-05-17T19:14:25.818+0000] {standard_task_runner.py:91} INFO - Job 244: Subtask convert_to_avro
+[2024-05-17T19:14:25.857+0000] {task_command.py:426} INFO - Running <TaskInstance: process_sales.convert_to_avro scheduled__2022-08-10T01:00:00+00:00 [running]> on host 6239d20906ca
+[2024-05-17T19:14:25.931+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='ostapenko.vctr@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_sales' AIRFLOW_CTX_TASK_ID='convert_to_avro' AIRFLOW_CTX_EXECUTION_DATE='2022-08-10T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-08-10T01:00:00+00:00'
+[2024-05-17T19:14:25.933+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-17T19:14:26.118+0000] {logging_mixin.py:188} INFO - Job_2 done! Response code: 200.
+[2024-05-17T19:14:26.119+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-17T19:14:26.120+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-17T19:14:26.129+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=process_sales, task_id=convert_to_avro, run_id=scheduled__2022-08-10T01:00:00+00:00, execution_date=20220810T010000, start_date=20240517T191425, end_date=20240517T191426
+[2024-05-17T19:14:26.151+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-17T19:14:26.164+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-17T19:14:26.166+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-17T19:16:01.712+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-17T19:16:01.729+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_sales.convert_to_avro scheduled__2022-08-10T01:00:00+00:00 [queued]>
+[2024-05-17T19:16:01.736+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_sales.convert_to_avro scheduled__2022-08-10T01:00:00+00:00 [queued]>
+[2024-05-17T19:16:01.737+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2024-05-17T19:16:01.747+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): convert_to_avro> on 2022-08-10 01:00:00+00:00
+[2024-05-17T19:16:01.752+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=120) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-17T19:16:01.754+0000] {standard_task_runner.py:63} INFO - Started process 122 to run task
+[2024-05-17T19:16:01.754+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'process_sales', 'convert_to_avro', 'scheduled__2022-08-10T01:00:00+00:00', '--job-id', '248', '--raw', '--subdir', 'DAGS_FOLDER/process_sales.py', '--cfg-path', '/tmp/tmp474d3s4q']
+[2024-05-17T19:16:01.756+0000] {standard_task_runner.py:91} INFO - Job 248: Subtask convert_to_avro
+[2024-05-17T19:16:01.790+0000] {task_command.py:426} INFO - Running <TaskInstance: process_sales.convert_to_avro scheduled__2022-08-10T01:00:00+00:00 [running]> on host 6239d20906ca
+[2024-05-17T19:16:01.857+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='ostapenko.vctr@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_sales' AIRFLOW_CTX_TASK_ID='convert_to_avro' AIRFLOW_CTX_EXECUTION_DATE='2022-08-10T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-08-10T01:00:00+00:00'
+[2024-05-17T19:16:01.859+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-17T19:16:02.106+0000] {logging_mixin.py:188} INFO - Job_2 done! Response code: 200.
+[2024-05-17T19:16:02.107+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-17T19:16:02.108+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-17T19:16:02.117+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=process_sales, task_id=convert_to_avro, run_id=scheduled__2022-08-10T01:00:00+00:00, execution_date=20220810T010000, start_date=20240517T191601, end_date=20240517T191602
+[2024-05-17T19:16:02.169+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-17T19:16:02.182+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-17T19:16:02.186+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
